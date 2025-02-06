@@ -11,6 +11,7 @@ import Timer from "./Components/Timer";
 import ColorBox from "./Components/ColorBox";
 import Events from "./Components/Events";
 import Event from "./Components/Event";
+import NoteManager from "./Components/NoteManager";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -67,6 +68,10 @@ function App() {
       <h1 className="text-center my-4">Event Management System</h1>
       <Events/>
     </div>
+
+    <div className="App">
+  <NoteManager/>
+</div>
       
       
     </>
