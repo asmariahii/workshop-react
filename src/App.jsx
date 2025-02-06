@@ -1,12 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Hello from './Components/Hello'
-import Form from './Components/Form'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Hello from "./Components/Hello";
+import Form from "./Components/Form";
+import ComponentClass from "./Components/ComponentClass";
+import ComponentFonct from "./Components/ComponentFonct";
+import Counter from "./Components/Counter";
+import Timer from "./Components/Timer";
+import ColorBox from "./Components/ColorBox";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -30,11 +35,35 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      <Hello/>
-      <Form labelle="FirstName : " type="text" namee="FirstName" name="Firstname"/>
-      <Form labelle="LastName : "/>
+      <Hello />
+
+      <Form
+        labelle="FirstName : "
+        type="text"
+        namee="FirstName"
+        name="Firstname"
+      />
+      <Form labelle="LastName : " />
+      <div className="App">
+        <ComponentClass />
+      </div>
+      <div className="App">
+        <ComponentFonct/>
+      </div>
+      <div className="App">
+        <Counter/>
+      </div>
+      <div className="App">
+        <Timer/>
+      </div>
+
+      <div className="App">
+        <ColorBox/>
+      </div>
+
+      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
