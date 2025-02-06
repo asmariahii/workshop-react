@@ -9,6 +9,8 @@ import ComponentFonct from "./Components/ComponentFonct";
 import Counter from "./Components/Counter";
 import Timer from "./Components/Timer";
 import ColorBox from "./Components/ColorBox";
+import Events from "./Components/Events";
+import Event from "./Components/Event";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -35,32 +37,37 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      <Hello />
+      {/* <Hello />
 
-      <Form
-        labelle="FirstName : "
-        type="text"
-        namee="FirstName"
-        name="Firstname"
-      />
-      <Form labelle="LastName : " />
-      <div className="App">
-        <ComponentClass />
-      </div>
-      <div className="App">
-        <ComponentFonct/>
-      </div>
-      <div className="App">
-        <Counter/>
-      </div>
-      <div className="App">
-        <Timer/>
-      </div>
+<Form
+  labelle="FirstName : "
+  type="text"
+  namee="FirstName"
+  name="Firstname"
+/>
+<Form labelle="LastName : " />
+<div className="App">
+  <ComponentClass />
+</div>
+<div className="App">
+  <ComponentFonct/>
+</div>
+<div className="App">
+  <Counter/>
+</div>
+<div className="App">
+  <Timer/>
+</div>
 
-      <div className="App">
-        <ColorBox/>
-      </div>
+<div className="App">
+  <ColorBox/>
+</div> */}
 
+     <div className="App">
+      <h1 className="text-center my-4">Event Management System</h1>
+      <Events/>
+    </div>
+      
       
     </>
   );
