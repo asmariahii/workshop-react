@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 function ColorBox() {
-  const [bgColor, setBgColor] = useState("#FFC0CB"); // Rose
+  const [bgColor, setBgColor] = useState("#FF0000"); // Rouge au départ
 
   const changeColor = () => {
-    setBgColor(bgColor === "#FFC0CB" ? "#00FF00" : "#FFC0CB"); // Rouge → Vert et inversement
+    setBgColor(bgColor === "#FF0000" ? "#00FF00" : "#FF0000"); // Rouge → Vert et inversement
   };
 
   return (
