@@ -15,7 +15,7 @@ const Event = ({ event }) => {
             <strong>Tickets Available:</strong> {event.nbTickets}
           </Card.Text>
           <Card.Text>
-            <strong>Participants:</strong> {event.nbParticipants}
+            <strong>Participant:</strong> {event.nbParticipants}
           </Card.Text>
           <Card.Text>
             <strong>Like:</strong> {event.like ? 'Liked' : 'Not Liked'}
