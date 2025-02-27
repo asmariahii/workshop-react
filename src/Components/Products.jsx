@@ -5,7 +5,7 @@ import Product from "./Product";
 const Products = () => {
   const [products, setProducts] = useState([]);
 
-  useEffect(() => {
+  useEffect(() => {:::
     // Charger les données des produits depuis le fichier JSON
     fetch("../src/data/products.json")
       .then((response) => response.json())

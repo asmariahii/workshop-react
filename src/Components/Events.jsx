@@ -1,5 +1,7 @@
+// Components/Events.js
 import React, { useState, useEffect } from "react";
 import { Row, Col, Container, Alert } from "react-bootstrap";
+import { Link } from 'react-router-dom'; // Importer Link pour la navigation
 import Event from "./Event";
 
 const Events = () => {
@@ -12,7 +14,7 @@ const Events = () => {
       .catch((error) => console.error("Erreur lors du chargement des événements:", error));
   }, []);
 
-  // Fonction pour réserver un événement (book)
+  // Fonction pour réserver un événement
   const bookEvent = (index) => {
     setEvents((prevEvents) =>
       prevEvents.map((event, i) =>
@@ -34,7 +36,7 @@ const Events = () => {
 
   return (
     <Container className="mt-4">
-      {/* Message de Bienvenue */}
+      {/* Message de bienvenue */}
       <Alert variant="success">
         <h4>Bienvenue sur notre plateforme d'événements!</h4>
         <p>Nous avons des événements passionnants à venir. Réservez votre place dès maintenant!</p>
@@ -43,11 +45,14 @@ const Events = () => {
       <Row className="g-4">
         {events.map((event, index) => (
           <Col key={index} xs={12} sm={6} md={4} lg={3}>
-            <Event 
-              event={event} 
-              onBook={() => bookEvent(index)} 
-              onLikeToggle={() => toggleLike(index)} 
-            />
+            {/* Lien vers la page de détails avec l'ID de l'événement */}
+            <Link to={`/event/${event.id}`} style={{ textDecoration: 'none' }}>
+              <Event 
+                event={event} 
+                onBook={() => bookEvent(index)} 
+                onLikeToggle={() => toggleLike(index)} 
+              />
+            </Link>
           </Col>
         ))}
       </Row>
