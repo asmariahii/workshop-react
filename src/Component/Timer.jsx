@@ -14,4 +14,9 @@ function Timer() {
   return <p>Temps écoulé : {seconds} secondes.</p>;
 }
  
+<<<<<<<< Updated upstream:src/Component/Timer.jsx
 export default Timer;
+========
+export default Timer;
+ 
+>>>>>>>> Stashed changes:src/Component/tableauUseEffect.jsx

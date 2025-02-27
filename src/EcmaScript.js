@@ -1,3 +1,3 @@
-export const findLongestWord =(wordsArray) => {
+export const findLongestWord = (wordsArray) =>{
     
 }

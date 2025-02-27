@@ -18,7 +18,7 @@ class ComponentClass extends Component {
     return (
       <>
         <p>{this.state.monTexte}</p>
-        <p>Ceci est un composant de classe</p>
+        <p>Ceci est un composant de classe :</p>
         <Button variant="primary" onClick={this.handleClick}>
           Incrémenter
         </Button>

@@ -20,10 +20,7 @@ function ColorBox() {
           transition: "0.5s ease-in-out", // Ajoute une transition fluide
         }}
       ></div>
-      <button
-        onClick={changeColor}
-        style={{ padding: "10px 15px", cursor: "pointer" }}
-      >
+      <button onClick={changeColor} style={{ padding: "10px 15px", cursor: "pointer" }}>
         Changer de couleur
       </button>
     </div>
